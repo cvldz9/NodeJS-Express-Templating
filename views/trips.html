@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <br>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tours</li>
+        </ol>
+      </nav>
+
+    <h2 style="text-align: center !important; font-family: cursive">TOURS</h2>
+    <br>
+    <p style="text-align: center; width: 60%; margin: auto;">Discover the Philippines: A Land of Enchantment and Adventure. From the Pristine Beaches of Boracay to the Majestic Rice Terraces of Banaue, Each Destination Offers a Unique Experience. Immerse Yourself in the Warm Hospitality of the Filipino People. Let Your Journey Begin!</p><br><BR>
+    
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card"  style="width: 22rem;">
+                <img src="https://www.rappler.com/tachyon/2022/07/boracay.jpg" class="card-img-top" alt="Boracay">
+                <div class="card-body">
+                  <h5 class="card-title">14 Days Relaxing Philippines Tour from Manila: Bohol - EI Nido - Boracay</h5>
+                  <p class="card-text">Experience the Best of the Philippines: A 14-Day Tour from Manila to Bohol, El Nido, and Boracay, Offering Relaxation and Adventure in Equal Measure.</p>
+                  <a href="#" class="btn btn-primary viewDetailsBtn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card" style="width: 22rem;">
+                <img src="https://i0.wp.com/wanderlustyle.com/wp-content/uploads/2017/12/boy-swims-w-whale-shark.jpg?fit=1600%2C970&ssl=1" class="card-img-top" alt="Boracay">
+                <div class="card-body">
+                  <h5 class="card-title">12 Days Philippines Adventure Tour (Manila - Bohol - Cebu - Coron)</h5>
+                  <p class="card-text">This action-packed tour takes you on a journey through the heart of the Philippines, where you'll discover pristine beaches, lush jungles, and crystal-clear waters.</p>
+                  <a href="#" class="btn btn-primary viewDetailsBtn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card" style="width: 22rem;">
+                <img src="https://mediaim.expedia.com/destination/1/dcc4b5ab1c594fa368c2c71f52313040.jpg" class="card-img-top" alt="Boracay">
+                <div class="card-body">
+                  <h5 class="card-title">16 Days Philippines Palawan Tour to Puerto Princesa, El Nido & Coron</h5>
+                  <p class="card-text">Explore the wonders of Palawan, Philippines, on a 16-day adventure. Visit Puerto Princesa's Underground River, El Nido's limestone cliffs, and Coron's lagoons. </p>
+                  <a href="#" class="btn btn-primary viewDetailsBtn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card" style="width: 25rem;">
+                <img src="https://deih43ym53wif.cloudfront.net/banaue-rice-terraces-philippines-shutterstock_627323633_4d13478f9e.jpeg" class="card-img-top" alt="Boracay">
+                <div class="card-body">
+                  <h5 class="card-title">4 Days Banaue Rice Terraces Tour from Manila</h5>
+                  <p class="card-text">Embark on a 4-day journey from Manila to the breathtaking Banaue Rice Terraces. Experience the rich culture of the Ifugao people and marvel at the stunning landscapes. Ideal for those seeking a cultural and scenic escape.</p>
+                  <a href="#" class="btn btn-primary" id="viewDetailsBtn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div id="modal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Hello there!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>The details of the trip will display here.</p>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll('.viewDetailsBtn').forEach(function(button) {
+        button.addEventListener('click', function() {
+          var modal = new bootstrap.Modal(document.getElementById('modal'));
+          modal.show();
+        });
+      });
+    </script>
+
+    
+</body>
+</html>
